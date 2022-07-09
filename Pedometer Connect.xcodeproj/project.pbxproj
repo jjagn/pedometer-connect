@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB20C458286D093D003B7282 /* ConnectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20C457286D093D003B7282 /* ConnectButtonView.swift */; };
+		FB20C45A286D09FA003B7282 /* PedometerConnectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20C459286D09FA003B7282 /* PedometerConnectViewModel.swift */; };
+		FB20C45D286E719D003B7282 /* ConnectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20C45C286E719D003B7282 /* ConnectButton.swift */; };
+		FB472D8328702793004B121F /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = FB472D8228702793004B121F /* SwiftUICharts */; };
+		FB472D85287027E5004B121F /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB472D84287027E5004B121F /* ChartView.swift */; };
+		FB7FAF04284DC0FE00AA90BC /* Pedometer_ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FAF03284DC0FE00AA90BC /* Pedometer_ConnectApp.swift */; };
+		FB7FAF06284DC0FE00AA90BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FAF05284DC0FE00AA90BC /* ContentView.swift */; };
+		FB7FAF08284DC0FF00AA90BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7FAF07284DC0FF00AA90BC /* Assets.xcassets */; };
+		FB7FAF0B284DC0FF00AA90BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7FAF0A284DC0FF00AA90BC /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB20C457286D093D003B7282 /* ConnectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectButtonView.swift; sourceTree = "<group>"; };
+		FB20C459286D09FA003B7282 /* PedometerConnectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerConnectViewModel.swift; sourceTree = "<group>"; };
+		FB20C45C286E719D003B7282 /* ConnectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectButton.swift; sourceTree = "<group>"; };
+		FB472D84287027E5004B121F /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		FB7FAF00284DC0FE00AA90BC /* Pedometer Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pedometer Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7FAF03284DC0FE00AA90BC /* Pedometer_ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedometer_ConnectApp.swift; sourceTree = "<group>"; };
+		FB7FAF05284DC0FE00AA90BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB7FAF07284DC0FF00AA90BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB7FAF0A284DC0FF00AA90BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB7FAEFD284DC0FE00AA90BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB472D8328702793004B121F /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB20C45B286E7166003B7282 /* Custom Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FB20C45C286E719D003B7282 /* ConnectButton.swift */,
+			);
+			path = "Custom Styles";
+			sourceTree = "<group>";
+		};
+		FB7FAEF7284DC0FE00AA90BC = {
+			isa = PBXGroup;
+			children = (
+				FB7FAF02284DC0FE00AA90BC /* Pedometer Connect */,
+				FB7FAF01284DC0FE00AA90BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB7FAF01284DC0FE00AA90BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB7FAF00284DC0FE00AA90BC /* Pedometer Connect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB7FAF02284DC0FE00AA90BC /* Pedometer Connect */ = {
+			isa = PBXGroup;
+			children = (
+				FB20C45B286E7166003B7282 /* Custom Styles */,
+				FB7FAF03284DC0FE00AA90BC /* Pedometer_ConnectApp.swift */,
+				FB7FAF05284DC0FE00AA90BC /* ContentView.swift */,
+				FB20C459286D09FA003B7282 /* PedometerConnectViewModel.swift */,
+				FB20C457286D093D003B7282 /* ConnectButtonView.swift */,
+				FB472D84287027E5004B121F /* ChartView.swift */,
+				FB7FAF07284DC0FF00AA90BC /* Assets.xcassets */,
+				FB7FAF09284DC0FF00AA90BC /* Preview Content */,
+			);
+			path = "Pedometer Connect";
+			sourceTree = "<group>";
+		};
+		FB7FAF09284DC0FF00AA90BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB7FAF0A284DC0FF00AA90BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB7FAEFF284DC0FE00AA90BC /* Pedometer Connect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7FAF0E284DC0FF00AA90BC /* Build configuration list for PBXNativeTarget "Pedometer Connect" */;
+			buildPhases = (
+				FB7FAEFC284DC0FE00AA90BC /* Sources */,
+				FB7FAEFD284DC0FE00AA90BC /* Frameworks */,
+				FB7FAEFE284DC0FE00AA90BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pedometer Connect";
+			packageProductDependencies = (
+				FB472D8228702793004B121F /* SwiftUICharts */,
+			);
+			productName = "Pedometer Connect";
+			productReference = FB7FAF00284DC0FE00AA90BC /* Pedometer Connect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB7FAEF8284DC0FE00AA90BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FB7FAEFF284DC0FE00AA90BC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FB7FAEFB284DC0FE00AA90BC /* Build configuration list for PBXProject "Pedometer Connect" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB7FAEF7284DC0FE00AA90BC;
+			packageReferences = (
+				FB472D8128702793004B121F /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = FB7FAF01284DC0FE00AA90BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB7FAEFF284DC0FE00AA90BC /* Pedometer Connect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB7FAEFE284DC0FE00AA90BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7FAF0B284DC0FF00AA90BC /* Preview Assets.xcassets in Resources */,
+				FB7FAF08284DC0FF00AA90BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB7FAEFC284DC0FE00AA90BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB20C45D286E719D003B7282 /* ConnectButton.swift in Sources */,
+				FB7FAF06284DC0FE00AA90BC /* ContentView.swift in Sources */,
+				FB20C45A286D09FA003B7282 /* PedometerConnectViewModel.swift in Sources */,
+				FB7FAF04284DC0FE00AA90BC /* Pedometer_ConnectApp.swift in Sources */,
+				FB20C458286D093D003B7282 /* ConnectButtonView.swift in Sources */,
+				FB472D85287027E5004B121F /* ChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB7FAF0C284DC0FF00AA90BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DONT_GENERATE_INFOPLIST_FILE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Pedometer Connect";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB7FAF0D284DC0FF00AA90BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DONT_GENERATE_INFOPLIST_FILE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "Pedometer Connect";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB7FAF0F284DC0FF00AA90BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pedometer Connect/Preview Content\"";
+				DEVELOPMENT_TEAM = 7HSPBXPA39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pedometer Connect/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth to connect to the ESP32 step counter peripheral";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses bluetooth to connect to the ESP32 step counter peripheral";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jjagn.Pedometer-Connect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB7FAF10284DC0FF00AA90BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pedometer Connect/Preview Content\"";
+				DEVELOPMENT_TEAM = 7HSPBXPA39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pedometer Connect/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth to connect to the ESP32 step counter peripheral";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses bluetooth to connect to the ESP32 step counter peripheral";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jjagn.Pedometer-Connect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB7FAEFB284DC0FE00AA90BC /* Build configuration list for PBXProject "Pedometer Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7FAF0C284DC0FF00AA90BC /* Debug */,
+				FB7FAF0D284DC0FF00AA90BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7FAF0E284DC0FF00AA90BC /* Build configuration list for PBXNativeTarget "Pedometer Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7FAF0F284DC0FF00AA90BC /* Debug */,
+				FB7FAF10284DC0FF00AA90BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB472D8128702793004B121F /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB472D8228702793004B121F /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB472D8128702793004B121F /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FB7FAEF8284DC0FE00AA90BC /* Project object */;
+}
