@@ -7,23 +7,38 @@
 
 import Foundation
 import CoreBluetooth
+import CoreData
+
+let unitLength = 5 // 5 minute interval
+let maxEntries = 24*60/unitLength // 5 minute intervals in a 24 hour period
+let unitsPerHour = 60/unitLength // number of units per hour for calculating steps per hour
+
+let userDefaults = UserDefaults.standard
 
 class PedometerViewModel: NSObject, ObservableObject, Identifiable {
     var id = UUID()
-    
+        
     @Published var output = "Disconnected" // current text to display in the output
     
     @Published var stepsThisUnit:Int32 = 0
     
+    @Published var stepsLastHour:Int32 = 0
+    
     @Published var stepsTotal:Int = 0
     
-    @Published var stepsDataOverTime:[Double] = [0]
+    @Published var stepsDataOverTime: [Double] = userDefaults.object(forKey: "stepsData") as? [Double] ?? []
     
     @Published var changeRate = 0
     
     @Published var connected = false // true when BLE connection becomes active
     
+    @Published var metresLastHour:Int32 = 0
+    
+    @Published var metresToday:Int = 0
+    
     @Published var date = Date().timeIntervalSinceReferenceDate
+    
+    @Published var buttonTapped = false
     
     private var centralQueue: DispatchQueue?
     
@@ -39,6 +54,7 @@ class PedometerViewModel: NSObject, ObservableObject, Identifiable {
         output = "Connecting..."
         centralQueue = DispatchQueue(label: "test.discovery")
         centralManager = CBCentralManager(delegate: self, queue: centralQueue)
+        buttonTapped = true
     }
     
     func disconnectPedometer() {
@@ -46,6 +62,14 @@ class PedometerViewModel: NSObject, ObservableObject, Identifiable {
               let peripheral = connectedPeripheral else { return }
               
         manager.cancelPeripheralConnection(peripheral)
+        
+        // force save data on disconnect
+        userDefaults.set(stepsDataOverTime, forKey: "stepsData")
+    }
+    
+    func clearData() {
+        stepsDataOverTime.removeAll()
+        userDefaults.set(stepsDataOverTime, forKey: "stepsData")
     }
 }
 
@@ -123,6 +147,19 @@ extension PedometerViewModel : CBPeripheralDelegate {
         DispatchQueue.main.async {
             self.connected = true
             self.output = "Connected"
+            self.buttonTapped = false
+            
+            self.stepsTotal = Int(self.stepsDataOverTime.reduce(0, {x,y in
+                x + y
+            }))
+            
+            self.metresToday = self.stepsTotal / 5
+            
+            self.stepsLastHour = Int32(self.stepsDataOverTime.suffix(unitsPerHour).reduce(0, {x,y in
+                x + y
+            }))
+            
+            self.metresLastHour = self.stepsLastHour / 5
         }
     }
     
@@ -166,8 +203,15 @@ extension PedometerViewModel : CBPeripheralDelegate {
                         x + y
                     }))
                     
-                    let numElements = self.stepsDataOverTime.count
+                    self.metresToday = self.stepsTotal / 5
                     
+                    self.stepsLastHour = Int32(self.stepsDataOverTime.suffix(unitsPerHour).reduce(0, {x,y in
+                        x + y
+                    }))
+                    
+                    self.metresLastHour = self.stepsLastHour / 5
+                    
+                    let numElements = self.stepsDataOverTime.count
                     if numElements > 2 {
                         var copy = self.stepsDataOverTime
                         if let last = copy.popLast() {
@@ -186,7 +230,15 @@ extension PedometerViewModel : CBPeripheralDelegate {
                         self.stepsThisUnit = rx
                 }
                 self.output = "\(rx)"
+                
+                // wrap entries to 10
+                if self.stepsDataOverTime.count > maxEntries {
+                    self.stepsDataOverTime = self.stepsDataOverTime.suffix(maxEntries)
+                }
             }
+            
+            // save
+            userDefaults.set(stepsDataOverTime, forKey: "stepsData")
         }
     }
 }

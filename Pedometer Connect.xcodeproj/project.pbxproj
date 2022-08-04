@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1BE12F288146E30000265B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB1BE12D288146E30000265B /* Model.xcdatamodeld */; };
 		FB20C458286D093D003B7282 /* ConnectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20C457286D093D003B7282 /* ConnectButtonView.swift */; };
 		FB20C45A286D09FA003B7282 /* PedometerConnectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20C459286D09FA003B7282 /* PedometerConnectViewModel.swift */; };
 		FB20C45D286E719D003B7282 /* ConnectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20C45C286E719D003B7282 /* ConnectButton.swift */; };
@@ -16,9 +17,12 @@
 		FB7FAF06284DC0FE00AA90BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FAF05284DC0FE00AA90BC /* ContentView.swift */; };
 		FB7FAF08284DC0FF00AA90BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7FAF07284DC0FF00AA90BC /* Assets.xcassets */; };
 		FB7FAF0B284DC0FF00AA90BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7FAF0A284DC0FF00AA90BC /* Preview Assets.xcassets */; };
+		FB98ED172898BC5F0056988E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98ED162898BC5F0056988E /* DataController.swift */; };
+		FBDB700B2898B366002475A7 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBDB70092898B366002475A7 /* Bookworm.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1BE12E288146E30000265B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FB20C457286D093D003B7282 /* ConnectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectButtonView.swift; sourceTree = "<group>"; };
 		FB20C459286D09FA003B7282 /* PedometerConnectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerConnectViewModel.swift; sourceTree = "<group>"; };
 		FB20C45C286E719D003B7282 /* ConnectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectButton.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		FB7FAF05284DC0FE00AA90BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB7FAF07284DC0FF00AA90BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7FAF0A284DC0FF00AA90BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB98ED162898BC5F0056988E /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FBDB700A2898B366002475A7 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +78,13 @@
 				FB20C45B286E7166003B7282 /* Custom Styles */,
 				FB7FAF03284DC0FE00AA90BC /* Pedometer_ConnectApp.swift */,
 				FB7FAF05284DC0FE00AA90BC /* ContentView.swift */,
+				FBDB70092898B366002475A7 /* Bookworm.xcdatamodeld */,
 				FB20C459286D09FA003B7282 /* PedometerConnectViewModel.swift */,
+				FB1BE12D288146E30000265B /* Model.xcdatamodeld */,
 				FB20C457286D093D003B7282 /* ConnectButtonView.swift */,
 				FB472D84287027E5004B121F /* ChartView.swift */,
 				FB7FAF07284DC0FF00AA90BC /* Assets.xcassets */,
+				FB98ED162898BC5F0056988E /* DataController.swift */,
 				FB7FAF09284DC0FF00AA90BC /* Preview Content */,
 			);
 			path = "Pedometer Connect";
@@ -168,7 +177,10 @@
 				FB20C45D286E719D003B7282 /* ConnectButton.swift in Sources */,
 				FB7FAF06284DC0FE00AA90BC /* ContentView.swift in Sources */,
 				FB20C45A286D09FA003B7282 /* PedometerConnectViewModel.swift in Sources */,
+				FB1BE12F288146E30000265B /* Model.xcdatamodeld in Sources */,
+				FB98ED172898BC5F0056988E /* DataController.swift in Sources */,
 				FB7FAF04284DC0FE00AA90BC /* Pedometer_ConnectApp.swift in Sources */,
+				FBDB700B2898B366002475A7 /* Bookworm.xcdatamodeld in Sources */,
 				FB20C458286D093D003B7282 /* ConnectButtonView.swift in Sources */,
 				FB472D85287027E5004B121F /* ChartView.swift in Sources */,
 			);
@@ -404,6 +416,29 @@
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FB1BE12D288146E30000265B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB1BE12E288146E30000265B /* Model.xcdatamodel */,
+			);
+			currentVersion = FB1BE12E288146E30000265B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FBDB70092898B366002475A7 /* Bookworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBDB700A2898B366002475A7 /* Bookworm.xcdatamodel */,
+			);
+			currentVersion = FBDB700A2898B366002475A7 /* Bookworm.xcdatamodel */;
+			path = Bookworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FB7FAEF8284DC0FE00AA90BC /* Project object */;
 }

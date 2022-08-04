@@ -10,10 +10,23 @@ import SwiftUICharts
 
 struct ChartView: View {
     
+    let demoData: [Double] = [55, 47, 43, 45, 40, 67, 68, 64, 67, 73, 72]
+    
     @ObservedObject var viewModel: PedometerViewModel
     
+    let style: ChartStyle = ChartStyle(
+        backgroundColor: Color.white,
+        accentColor: Colors.OrangeStart,
+        secondGradientColor: Colors.OrangeEnd,
+        textColor: Color.black,
+        legendTextColor: Color.gray,
+        dropShadowColor: Color.gray)
+    
     var body: some View {
-        LineChartView(data: viewModel.stepsDataOverTime, title: "Steps", form: ChartForm.extraLarge, rateValue: viewModel.changeRate, dropShadow: true)
+        GeometryReader { geometry in
+            LineChartView(data: viewModel.stepsDataOverTime.map {$0 / 5}, title: "Distance over time", style: style, form: CGSize(width: geometry.size.width-100, height: 240), rateValue: viewModel.changeRate, dropShadow: true)
+                .frame(width: geometry.size.width, height: 240, alignment: .center)
+        }
     }
 }
 
